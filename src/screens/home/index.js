@@ -1,24 +1,23 @@
-import React from "react";
-import { SafeAreaView, Text, TouchableOpacity, View } from "react-native";
-import { styles } from "./styles";
+import React from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
+import {styles} from './styles';
 
 class Home extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      textBtnInput : 'Input User',
-      textBtnList : 'Get All User'
-    }
+      textBtnInput: 'Input User',
+      textBtnList: 'Get All User',
+    };
   }
 
   goToFormInput = () => {
-    this.props.navigation.navigate('FormInput')
-  }
+    this.props.navigation.navigate('FormInput');
+  };
 
   goToGetListUser = () => {
-    this.props.navigation.navigate('ListUser')
-  }
+    this.props.navigation.navigate('ListUser');
+  };
 
   render() {
     return (
@@ -27,8 +26,7 @@ class Home extends React.Component {
           <View style={styles.viewBtn}>
             <TouchableOpacity
               style={styles.btnInput}
-              onPress={this.goToFormInput}
-            >
+              onPress={this.goToFormInput}>
               <Text style={styles.textBtn}>{this.state.textBtnInput}</Text>
             </TouchableOpacity>
           </View>
@@ -36,8 +34,7 @@ class Home extends React.Component {
           <View style={styles.viewBtn}>
             <TouchableOpacity
               style={styles.btnInput}
-              onPress={this.goToGetListUser}
-            >
+              onPress={this.goToGetListUser}>
               <Text style={styles.textBtn}>{this.state.textBtnList}</Text>
             </TouchableOpacity>
           </View>
@@ -45,7 +42,6 @@ class Home extends React.Component {
       </View>
     );
   }
-
 }
 
-export default Home
+export default Home;

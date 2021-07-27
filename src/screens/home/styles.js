@@ -1,13 +1,12 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 
-export const styles =  StyleSheet.create({
-
+export const styles = StyleSheet.create({
   containerView: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#2F3137',
-    paddingVertical: 275
+    paddingVertical: 275,
   },
 
   btnInput: {
@@ -17,7 +16,7 @@ export const styles =  StyleSheet.create({
     borderColor: 'white',
     borderRadius: 3,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   viewBtn: {
@@ -26,18 +25,18 @@ export const styles =  StyleSheet.create({
     height: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 3
+    borderRadius: 3,
   },
 
   textBtn: {
     color: 'white',
-    fontSize: 16
+    fontSize: 16,
   },
 
-  viewBtnContainer : {
+  viewBtnContainer: {
     width: '100%',
     height: '100%',
     alignItems: 'center',
-    justifyContent: 'space-evenly'
-  }
-})
+    justifyContent: 'space-evenly',
+  },
+});

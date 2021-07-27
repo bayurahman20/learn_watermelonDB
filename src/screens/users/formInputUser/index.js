@@ -1,5 +1,5 @@
-import React from "react";
-import { Text, View } from "react-native";
+import React from 'react';
+import {Text, View} from 'react-native';
 
 class FormInputUser extends React.Component {
   render() {
@@ -11,4 +11,4 @@ class FormInputUser extends React.Component {
   }
 }
 
-export default FormInputUser
+export default FormInputUser;
